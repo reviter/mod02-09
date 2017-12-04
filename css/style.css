@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* To avoid overflow */
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: lightgray;
+	font-family: 'Lato', sans-serif;
+	background-image: url("http://www.sbfurniture.com.ph//assets/Uploads/frame-5-magalogue-BG.png");
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto; /* To center the wrapper */
+	background-color: #fff;
+	background: rgba(0,0,0,0.1);
+}
+
+div {
+	/*padding: 20px;*/
+}
+
+footer {
+	background-color: #99aab5;
+	height: 50px;
+	line-height: 50px;
+	color: #2c2f33;
+	font-size: 14px;
+	text-align: center;
+}
+
+li,
+ul {
+	display: block;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.grandparent {
+	background-color: skyblue;
+	width: inherit; /* Refer to wrapper container's width */
+	position: fixed;
+	bottom: 0;
+	/*left: 50px;*/
+}
+
+.parent	{
+	background-color: pink;
+	position: relative;
+	width: 100%;  /*Refer to grandparent container's width*/ 
+}
+
+p {
+	/*position: static; /* Default */
+	/*margin-left: 50px;*/
+	/*margin-top: -20px;*/
+}
+
+input[name="submit"] {
+	margin-left: 20px;
+}
+
+h1 {
+	background-color: darkgray;
+	padding: 10px;
+	position: fixed;
+	z-index: 1;
+	width: inherit;
+}
+
+main.wrapper > p {
+	height: 1000px;
+	background-color: #efefef;
+	position: relative;
+	top: 70px;
+}
+
+/*
+*
+* Page 3 CSS Rules
+*
+*/
+
+/*div {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	position: absolute;
+}*/
+
+.blue{
+	background-color: blue;
+	top: 20px;
+	left: 20px;
+	z-index: 0;
+}
+.yellow {
+	background-color: yellow;
+	top: 40px;
+	left: 40px;
+	z-index: 1;
+}
+.orange {
+	background-color: orange;
+	top: 60px;
+	left: 60px;
+	z-index: 2;
+}
+
+/*
+*
+* Page 4 CSS Rules
+*
+*/
+
+/*main.wrapper div {
+	padding: 0;
+	margin: 0;
+}*/
+
+.menu {
+	background-image: url('http://codex-themes.com/scalia/one-page/wp-content/uploads/2014/12/header-background.jpg');
+	text-align: center;
+	height: 100px;
+	background-color: #999999; /* Blue */
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+}
+
+nav.upper-nav {
+	padding: 0 15px;
+    border-bottom: 1px solid;
+}
+
+.sidebar {
+	text-align: center;
+	height: 300px;
+	width: 20%;
+	background-color: #e1f7d5; /* Red */
+	float: left; /* possible value: right, none, left */
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	background: rgba(0,0,0,0.1);
+}
+
+
+/*
+*
+* Content
+*
+*/
+
+.content {
+	/*height: 500px;*/
+	background-color: #d4d4d4; /* Yellow */
+	width: 80%;
+	float: left;
+	padding: 25px;
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+	background: rgba(0,0,0,0.05);
+}
+
+.article-image {
+	width: 400px;
+	/*height: 200px;*/
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+div.content > p {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.footer {
+	/*height: 200px;*/
+	background-color: #e1f7d5; /* Light Blue */
+	clear: both; /* will offset floating effect */
+	/*border: 5px solid red;*/
+	background: rgba(0,0,0,0.05);
+}
+
+.avatar {
+	width: 300px;
+	height: 300px;
+	background-color: #fff; /* Pink */
+	float: left;
+	margin-right: 25px;
+	border-radius: 0%;
+	background-image: url('https://www.nfm.com/productimages/33914334/1/M/');
+}
+
+.username {
+	margin-bottom: 1px;
+}
+
+h3.username + p {
+	overflow: hidden;
+}
+
+.page {
+	/*border: 1px solid red;
+	border-width: 3px;*/
+}
+
+/*
+*
+* Best way to clear floats
+*
+*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*
+*
+* Columns
+*
+*/
+
+.column {
+	background-color: #fff;
+	height: 440px;
+	width: 31%;
+	margin: 20px 1.16%;
+	/*border: 1px solid red;  For testing-only*/ 
+	float: left;
+	padding: 7px;
+	/*overflow: hidden;*/
+	position: relative;
+	background: rgba(0,0,0,0.05);
+}
+
+/*
+*
+* Managing text-overflow with multiline support
+*
+*/
+
+.block-with-text {
+	overflow: hidden;
+	position: relative;
+	line-height: 1.2em; /* em = default font-size, 16px */
+	max-height: 3.6em;
+	text-align: left;
+	margin-right: -1em;
+	padding-right: 30px;
+}
+
+.block-with-text:before {
+	content: "...";
+	position: absolute;
+	right: 17px;
+	bottom: 0;
+}
+
+.block-with-text:after {
+	content: "";
+	position: absolute;
+	right: 17px;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background-color: #b2d6ff;
+}
+
+.read-more {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+
